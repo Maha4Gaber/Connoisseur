@@ -1,17 +1,6 @@
 {
   "users": [
-    {
-      "name": "Maha Gaber anter",
-      "email": "redaredagaber5@gmail.com",
-      "pass": "123456789",
-      "id": 1
-    },
-    {
-      "name": "Maha Gaber anter",
-      "email": "abc@efg.com",
-      "pass": "123456789",
-      "id": 2
-    }
+    
   ],
   "product": [
     {
@@ -64,13 +53,7 @@
     }
   ],
   "comment": [
-    {
-      "user_id": 1,
-      "name": "Maha Gaber anter",
-      "sub": "123456",
-      "pro_id": "1",
-      "id": 1
-    }
+    
     
   ],
   "reviews": [
@@ -85,39 +68,9 @@
       "user_id": 5,
       "name": "~Lorem2",
       "text": "Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra."
-    },
-    {
-      "user_id": 2,
-      "name": "Maha Gaber anter",
-      "text": "your product is very good",
-      "id": 3
     }
   ],
   "orders": [
-    {
-      "id": 1,
-      "user_id": 1,
-      "pro_id": 1,
-      "name": "Lorem",
-      "adress": "Lorem A",
-      "amount": 1,
-      "payoption": "Cash"
-    },
-    {
-      "user_id": 1,
-      "pro_id": "1",
-      "name": "Maha Gaber Anter",
-      "adress": "محافظه اسيوط مركز أسيوط قريه علوان",
-      "payoption": "Cash",
-      "id": 2
-    },
-    {
-      "user_id": 2,
-      "pro_id": "1",
-      "name": "Maha Gaber anter",
-      "adress": "Assuit ",
-      "payoption": "Visa",
-      "id": 3
-    }
+    
   ]
 }
