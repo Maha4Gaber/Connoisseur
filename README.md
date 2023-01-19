@@ -15,19 +15,19 @@ npm run serve
 npm run build
 ```
 
-## install json server to run database
+### install json server to run database
 
 ```
 npm install -g json-server
 ```
 
-## enter DB folder
+### enter DB folder
 
 ```
  cd src\DB
 ```
 
-## Run json server 
+### Run json server 
 
 ```
 json-server --watch db.json
