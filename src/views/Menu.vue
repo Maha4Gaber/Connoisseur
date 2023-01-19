@@ -23,7 +23,7 @@
               </div>
               <Rate/>
               <div class="m_order right">
-                <a @click="Order" style="cursor: pointer;"
+                <a @click="Order(product.id)" style="cursor: pointer;"
                   class="button">Order Now</a>
               </div>
               <img src="../assets/images/menu/pizza4.jpeg" width="200" alt="" class="clear left item">
@@ -71,6 +71,7 @@
 import Footer from "../components/Footer.vue";
 import Sidbar from "../components/Sidebar.vue";
 import Rate from '../components/Rate.vue'
+import router from '@/router';
 import axios from 'axios';
 import { mapActions } from 'vuex';
 export default {
@@ -78,8 +79,8 @@ export default {
   components: { Sidbar,Rate,Footer },
   data() {
     return {
-      url:'../assets/images/menu/',
       products: [],
+      user: "",
     }
   },
   async mounted() {
@@ -88,17 +89,17 @@ export default {
     {
       this.products = result.data;
     } 
-    let user=JSON.parse(localStorage.getItem("user-date"))
+    this.user = JSON.parse(localStorage.getItem("user-data"));
   },
   methods: {
     ...mapActions(['redirectTo']),
-    Order() {
+    Order(id) {
       if(this.user)
       {
-        $router.push({
+        router.push({
           name: 'order',
           params: {
-            id: product.id,
+          id: id,
           },
         })
       }

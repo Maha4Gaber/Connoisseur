@@ -11,7 +11,7 @@
           <h6 class="rate clear">Price : ${{ product.price }}</h6>
           <h6 class="rate clear">About : </h6>
           <p>{{ product.dec }}</p>
-          <a @click="Order" style="cursor: pointer;" class="button order">Order Now</a>
+          <a @click="Order(product.id)" style="cursor: pointer;" class="button order">Order Now</a>
           <h6>{{ comments.length }} Comment</h6>
           <div class="row">
             <div class="col-9">
@@ -57,6 +57,7 @@
 import Footer from "../components/Footer.vue";
 import Sidbar from "../components/Sidebar.vue"
 import Rate from '../components/Rate.vue'
+import router from '@/router';
 import axios from "axios";
 import { mapActions } from 'vuex';
 export default {
@@ -89,16 +90,16 @@ export default {
     {
       console.log("comment fail");
     }
-    let user = JSON.parse(localStorage.getItem("user-date"))
+    // let user = JSON.parse(localStorage.getItem("user-date"))
   },
   methods: {
     ...mapActions(['redirectTo']),
-    Order() {
+    Order(id) {
       if(this.user) {
-        $router.push({
+        router.push({
           name: 'order',
           params: {
-            id: product.id,
+            id: id,
           },
         })
       }

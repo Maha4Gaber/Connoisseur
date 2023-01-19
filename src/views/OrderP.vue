@@ -107,22 +107,21 @@ export default {
         this.adress = '';
         this.quntity = 1;
         this.payop = '';
-        this.feedback = null;
       }
       else
       {
         this.uncomplet = true;
-
       }
       if(this.feedback!= null)
       {
         let review = await axios.post('http://localhost:3000/reviews',{
           user_id: this.user.id,
-          name: this.name,
+          name: this.user.name,
           text: this.feedback,
         })
         if(review.status === 201) {
           console.log("done");
+          this.feedback = null;
         }
       }
       
