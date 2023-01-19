@@ -23,13 +23,7 @@
               </div>
               <Rate/>
               <div class="m_order right">
-                <a @click="
-                    $router.push({
-                      name: 'order',
-                    params: { 
-                      id: product.id,
-                    },
-                })" style="cursor: pointer;"
+                <a @click="Order" style="cursor: pointer;"
                   class="button">Order Now</a>
               </div>
               <img src="../assets/images/menu/pizza4.jpeg" width="200" alt="" class="clear left item">
@@ -78,6 +72,7 @@ import Footer from "../components/Footer.vue";
 import Sidbar from "../components/Sidebar.vue";
 import Rate from '../components/Rate.vue'
 import axios from 'axios';
+import { mapActions } from 'vuex';
 export default {
   name: "menu",
   components: { Sidbar,Rate,Footer },
@@ -92,9 +87,30 @@ export default {
     if (result.status==200 && result.data.length>0)
     {
       this.products = result.data;
+    } 
+    let user=JSON.parse(localStorage.getItem("user-date"))
+  },
+  methods: {
+    ...mapActions(['redirectTo']),
+    Order() {
+      if(this.user)
+      {
+        $router.push({
+          name: 'order',
+          params: {
+            id: product.id,
+          },
+        })
+      }
+      else
+      {
+        this.redirectTo({
+          val:'signUp',
+        })
+        console.log("login");
+      }
     }
-    
-  }
+  },
 
 }
 </script>
