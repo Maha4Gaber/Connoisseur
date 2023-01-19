@@ -48,7 +48,7 @@
     <i class="fa-sharp fa-solid fa-circle-check"></i>
       The Order was successful
   </div>
-    <div v-if="uncomplet" class="dalert"  @click="stateChange" >
+    <div v-if="uncomplet" class="dalert"   >
       <i class="fa fa-triangle-exclamation"></i> Please Complete your data
     </div>
 
