@@ -125,7 +125,7 @@ export default {
   img {
     background-color: #9c5959;
     padding: 1px;
-    box-shadow: 0 0 4px rgb(0 0 0 /50%);
+    // box-shadow: 0 0 4px rgb(0 ,0 ,0 ,50%);
     border-radius: 2px;
   }
 
@@ -135,7 +135,6 @@ export default {
     margin-right: 10px;
     margin-bottom: 10px;
 
-    // width: 310pxcol-lg-4 col-md-6 col-sm-12
 
     p {
       font-size: 14px;
@@ -165,7 +164,7 @@ export default {
 
     .so_link {
       border-radius: 3px;
-      box-shadow: 0 4px 5px rgb(0 0 0 /30%);
+      // box-shadow: 0 0 4px 5px rgb(0 0 0 /30%);
       display: inline-block !important;
       font: 700 13px/36px 'Arial', Helvetica, Clean, sans-serif;
       height: 36px;
@@ -173,14 +172,14 @@ export default {
       padding: 0 10px 11px;
       position: relative;
       text-decoration: none;
-      text-shadow: 0 1px 1px rgb(0 0 0 /35%);
+      // text-shadow: 0 1px 1px rgb(0 0 0 /35%);
       width: 200px;
 
       &.twitter {
         background: #65acc8;
         background: -webkit-gradient(linear, 0 0, 0 0, from(#65acc8), to(#4586ae));
         border-top: 1px solid #a1cdde;
-        text-shadow: 0 1px 1px rgb(255 255 255 / 35%);
+        // text-shadow: 0 1px 1px rgb(255 255 255 / 35%);
         color: rgba(25, 45, 55, .9);
       }
 
@@ -190,7 +189,7 @@ export default {
             to(#304886));
         border-top: 1px solid #8ea4cd;
         color: rgba(21, 31, 53, 1);
-        text-shadow: 0 1px 1px rgb(255 255 255 / 35%);
+        // text-shadow: 0 1px 1px rgb(255 255 255 / 35%);
       }
 
       &.forrst {
@@ -199,7 +198,7 @@ export default {
             to(#3c592a));
         border-top: 1px solid #99b489;
         color: rgba(22, 33, 14, 1);
-        text-shadow: 0 1px 1px rgb(255 255 255 / 35%);
+        // text-shadow: 0 1px 1px rgb(255 255 255 / 35%);
       }
 
       &.flickr {
@@ -208,7 +207,7 @@ export default {
             to(#da3868));
         border-top: 1px solid #f3a2cd;
         color: rgba(74, 4, 32, 1);
-        text-shadow: 0 1px 1px rgb(255 255 255 / 35%);
+        // text-shadow: 0 1px 1px rgb(255 255 255 / 35%);
       }
 
       &.designmoo {
@@ -217,7 +216,7 @@ export default {
             to(#e13c41));
         border-top: 1px solid #eb5a5f;
         color: rgba(69, 22, 24, 1);
-        text-shadow: 0 1px 1px rgb(255 255 255 / 35%);
+        // text-shadow: 0 1px 1px rgb(255 255 255 / 35%);
       }
     }
 

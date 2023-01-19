@@ -137,7 +137,7 @@ export default {
   background: #9C5959;
   padding: 1px;
   margin-left: 4px;
-  box-shadow: 0 0 4px rgb(0 0 0 / 50%);
+  box-shadow: 0 0 4px rgba($color: #000000, $alpha: 1.0) (0 0 0 / 50%);
   border-radius: 2px;
   
 }

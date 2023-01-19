@@ -246,8 +246,8 @@ export default {
   background-color: #9c5959 !important;
   border: none;
   position: relative;
-  box-shadow: inset 0px -3px 1px rgb(0 0 0 / 45%),
-    0px 2px 2px rgb(0 0 0 / 25%);
+  // box-shadow: inset 0px -3px 1px rgb(0 0 0 / 45%),
+  //   0px 2px 2px rgb(0 0 0 / 25%);
   border-radius: 3px;
   text-decoration: none;
   font-size: 20px;
@@ -268,7 +268,7 @@ export default {
       width: 100% !important;
         background-color: #9c5959;
         padding: 1px;
-        box-shadow: 0 0 4px rgb(0 0 0 /50%);
+        // box-shadow: 0 0 4px rgb(0 0 0 /50%);
         border-radius: 2px;
     }
         .carousel-control-next,
@@ -277,10 +277,6 @@ export default {
           width: 5%;
           opacity: 1;
           display: none;
-        }
-        .carousel-control-prev
-        {
-          // left: 92% !important;
         }
         .carousel-control-next-icon, .carousel-control-prev-icon {
           background-color: #9c5959;
@@ -308,7 +304,7 @@ export default {
     background: #9C5959;
     padding: 1px;
     margin-left: 4px;
-    box-shadow: 0 0 4px rgb(0 0 0 / 50%);
+    // box-shadow: 0 0 4px rgb(0 0 0 / 50%);
     border-radius: 2px;
   }
   p{

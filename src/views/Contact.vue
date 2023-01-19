@@ -96,7 +96,7 @@ export default {
     font-size: 22px;
     font-family: 'Lobster', cursive;
     color: #9c5959;
-    text-shadow: 0px 1px 1px rgb(0 0 0 / 20%);
+    // text-shadow: 0px 1px 1px rgb(0 0 0 / 20%);
     font-weight: normal;
     padding-bottom: 10px;
     padding-top: 10px;

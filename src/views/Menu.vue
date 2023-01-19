@@ -138,11 +138,8 @@ export default {
     background: none;
     padding: 0;
     margin-left: 0;
-    -webkit-box-shadow: 0 0 0 rgb(0 0 0 / 50%);
-    -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.50);
-    box-shadow: 0 0 0 rgb(0 0 0 / 50%);
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
+    // box-shadow: 0 0 0 rgb(0 0 0 / 50%);
+
     border-radius: 0;
   }
 }

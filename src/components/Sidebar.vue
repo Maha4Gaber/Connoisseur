@@ -39,7 +39,7 @@ export default {
     width: 100%;
     background-color: #9c5959;
     padding: 1px;
-    box-shadow: 0 0 4px rgb(0 0 0 /50%);
+    // box-shadow: 0 0 4px rgb(0 0 0 /50%);
     border-radius: 2px;
   }
   }
