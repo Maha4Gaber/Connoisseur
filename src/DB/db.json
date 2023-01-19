@@ -70,28 +70,8 @@
       "sub": "123456",
       "pro_id": "1",
       "id": 1
-    },
-    {
-      "user_id": 1,
-      "name": "Maha Gaber anter",
-      "sub": "your product is very good",
-      "pro_id": "1",
-      "id": 2
-    },
-    {
-      "user_id": 2,
-      "name": "Maha Gaber anter",
-      "sub": "your product is very good",
-      "pro_id": "1",
-      "id": 3
-    },
-    {
-      "user_id": 2,
-      "name": "Maha Gaber anter",
-      "sub": "your product is very good 123456",
-      "pro_id": "1",
-      "id": 4
     }
+    
   ],
   "reviews": [
     {
