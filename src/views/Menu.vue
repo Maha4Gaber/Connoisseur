@@ -71,7 +71,6 @@
 import Footer from "../components/Footer.vue";
 import Sidbar from "../components/Sidebar.vue";
 import Rate from '../components/Rate.vue'
-import router from '@/router';
 import axios from 'axios';
 import { mapActions } from 'vuex';
 export default {
@@ -96,12 +95,7 @@ export default {
     Order(id) {
       if(this.user)
       {
-        router.push({
-          name: 'order',
-          params: {
-          id: id,
-          },
-        })
+        this.redirectTo({ name: 'order' ,params:{ id: id,}})
       }
       else
       {

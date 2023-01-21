@@ -90,18 +90,12 @@ export default {
     {
       console.log("comment fail");
     }
-    // let user = JSON.parse(localStorage.getItem("user-date"))
   },
   methods: {
     ...mapActions(['redirectTo']),
     Order(id) {
       if(this.user) {
-        router.push({
-          name: 'order',
-          params: {
-            id: id,
-          },
-        })
+        this.redirectTo({ name: 'order',params: { id: id,} })
       }
       else {
         this.redirectTo({
@@ -184,4 +178,3 @@ export default {
     }
 }
 </style>
-<!-- commentText -->
